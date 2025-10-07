@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Kosmosys</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #0b1c88;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: #0b1c88;
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #0b1c88 0%, #1e3a8a 100%);
+            color: white;
+            padding: 120px 2rem 60px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .last-updated {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            color: #0b1c88;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .section h3 {
+            font-size: 1.3rem;
+            color: #1a1a1a;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .section ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section li {
+            margin-bottom: 0.5rem;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .highlight-box {
+            background: #f8f9fa;
+            border-left: 4px solid #0b1c88;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #0b1c88 0%, #1e3a8a 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 3rem;
+        }
+
+        .contact-box h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .contact-box p {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-box a {
+            color: white;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #0b1c88;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem 2rem;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 3rem 1.5rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo">Kosmosys</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="https://imind.kosmosys.work" target="_blank">iMind</a></li>
+                <li><a href="https://n8n.kosmosys.work" target="_blank">n8n</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: October 5, 2025</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="intro">
+            <p>NATURAL FINDER SPA ("we," "us," or "our") respects your privacy. This policy explains how we handle your information when you use our services.</p>
+        </div>
+
+        <div class="section">
+            <h2>Information We Collect</h2>
+            
+            <h3>Information You Provide</h3>
+            <ul>
+                <li>Account details (name, email, password)</li>
+                <li>Content you submit through our services</li>
+                <li>Communications with our support team</li>
+            </ul>
+
+            <h3>Automatic Information</h3>
+            <ul>
+                <li>Usage data (pages visited, features used)</li>
+                <li>Device information (IP address, browser type, device ID)</li>
+                <li>Cookies for functionality and analytics</li>
+            </ul>
+
+            <h3>Third-Party Information</h3>
+            <ul>
+                <li>Social media profile data (when you connect Facebook, Google, etc.)</li>
+                <li>Analytics data from service providers</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>How We Use Your Information</h2>
+            <p>We use your information to:</p>
+            <ul>
+                <li>Provide and improve our services</li>
+                <li>Process transactions</li>
+                <li>Communicate with you</li>
+                <li>Analyze usage and fix technical issues</li>
+                <li>Comply with legal requirements</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Information Sharing</h2>
+            <p>We share information only with:</p>
+            <ul>
+                <li>Service providers who help us operate (hosting, analytics, payments)</li>
+                <li>Legal authorities when required by law</li>
+                <li>Business transfers (mergers, acquisitions)</li>
+            </ul>
+            <div class="highlight-box">
+                <p><strong>We do not sell your personal information.</strong></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Your Rights</h2>
+            <p>You can:</p>
+            <ul>
+                <li>Access and download your data</li>
+                <li>Correct your information in account settings</li>
+                <li>Delete your account by contacting us</li>
+                <li>Opt out of marketing emails</li>
+                <li>Manage cookie preferences in your browser</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Data Retention</h2>
+            <p>We keep your data while your account is active and as long as needed for legal compliance (typically 12-24 months for usage data).</p>
+        </div>
+
+        <div class="section">
+            <h2>Security</h2>
+            <p>We use encryption and security measures to protect your data, but no system is 100% secure.</p>
+        </div>
+
+        <div class="section">
+            <h2>Cookies</h2>
+            <p>We use cookies for:</p>
+            <ul>
+                <li>Essential functionality</li>
+                <li>Analytics (Google Analytics)</li>
+                <li>Social media features (Facebook Pixel)</li>
+            </ul>
+            <p>You can disable cookies in your browser settings.</p>
+        </div>
+
+        <div class="section">
+            <h2>Third-Party Services</h2>
+            <p>Our services may link to third-party websites (Facebook, payment processors, etc.). We're not responsible for their privacy practices.</p>
+        </div>
+
+        <div class="section">
+            <h2>Children</h2>
+            <p>Our services are not intended for users under 13. We don't knowingly collect children's data.</p>
+        </div>
+
+        <div class="section">
+            <h2>International Transfers</h2>
+            <p>Your data may be processed outside Chile. We ensure appropriate protections are in place.</p>
+        </div>
+
+        <div class="section">
+            <h2>Facebook/Meta Integration</h2>
+            <p>When you connect your Facebook account:</p>
+            <ul>
+                <li>We only access permissions you grant</li>
+                <li>You can revoke access anytime in Facebook settings</li>
+                <li>We comply with Facebook's Platform Terms and Data Use Restrictions</li>
+            </ul>
+            <p>See Facebook's privacy policy at: <a href="https://www.facebook.com/about/privacy" target="_blank" style="color: #0b1c88;">https://www.facebook.com/about/privacy</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Changes to This Policy</h2>
+            <p>We may update this policy. Continued use after changes means you accept the updated policy.</p>
+        </div>
+
+        <div class="contact-box" id="contact">
+            <h2>Contact Us</h2>
+            <p><strong>NATURAL FINDER SPA</strong></p>
+            <p>Email: <a href="mailto:admin@kosmosys.work">admin@kosmosys.work</a></p>
+            <p>Address: Ruben Donoso 2942, Iquique, 1100000, Chile</p>
+            <p style="margin-top: 1rem;">For questions about your data or to exercise your rights, contact us at the email above.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Natural Finder SpA (Kosmosys). All rights reserved. | <a href="/">Back to Home</a></p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
